@@ -1,0 +1,21 @@
+Biblioteca de elementos de interface com usuário (exemplos de slider, accordion, caroussel, tabs, pickers, panels e etc) 
+-User Interface Patterns
+http://ui-patterns.com/patterns
+-Welie  Interface Patterns
+http://www.welie.com/patterns/
+
+Recursos para inspiração (exemplos de templates prontos e wireframes)
+-Wireframe Showcase  
+http://www.wireframeshowcase.com/
+-Theme Forest
+https://themeforest.net/
+
+Ferramentas para criação de wireframes (sistemas web para construção de wireframes/protótipos de interface)     
+-Cacoo
+https://cacoo.com/
+-Wireframe.cc
+https://wireframe.cc/
+-Mockflow
+https://mockflow.com/
+-Balsamiq
+https://balsamiq.com/

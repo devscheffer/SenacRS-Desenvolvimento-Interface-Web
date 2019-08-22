@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="recebedados.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Nome completo</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Campo obrigatório" required autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gênero</label>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "sex" id = "sex1" value = "f"><label for = "sex1">Feminino</label> <br>
+                        <input type = "radio" name = "sex" id = "sex2" value = "m"><label for = "sex2">Masculino </label><br>
+                        <input type = "radio" name = "sex" id = "sex3" value = "o"><label for = "sex3">Outro </label><br>
+                        <input type = "radio" name = "sex" id = "sex4" value = "p"><label for = "sex4">Prefiro não responder</label> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Data de nascimento</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-mail</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Campo obrigatório" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="url">URL do site pessoal</label>
+                    </td>
+                    <td>
+                        <input type="url" name="url" id="url">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Endereço (Rua, número e complemento)</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address" placeholder="Campo obrigatório" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">Cidade</label>
+                    </td>
+                    <td>
+                        <select name="city" id="city">
+                            <option value = "c1" id = "city_1"> Alvorada</option>
+                            <option value = "c2" id = "city_2"> Canoas</option>
+                            <option value = "c3" id = "city_3"> Esteio</option>
+                            <option value = "c4" id = "city_4"> Gravataí</option>
+                            <option value = "c5" id = "city_5"> Novo Hamburgo</option>
+                            <option value = "c6" id = "city_6"> Passo Fundo</option>
+                            <option value = "c7" id = "city_7"> Pelotas</option>
+                            <option value = "c8" id = "city_8" selected> Porto Alegre</option>
+                            <option value = "c9" id = "city_9"> São Leopoldo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Telefone</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phone" id="phone">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>Áreas de atuação</label>
+                    </td>
+                    <td>
+                        <input type = "checkbox" name = "atuacao"   id = "d"><label for="d">Design</label> 
+                        <br>
+                        <input type = "checkbox" name = "atuacao" id = "dfe"><label for="dfe">Desenvolvimento Front-end</label>
+                        <br>
+                        <input type = "checkbox" name = "atuacao" id = "dbe"><label for="dbe">Desenvolvimento Back-end</label>
+                        <br>
+                        <input type = "checkbox" name = "atuacao"  id = "es"><label for="es">Engenharia de Software</label>
+                        <br>
+                        <input type = "checkbox" name = "atuacao"  id = "bd"><label for="bd">Banco de Dados</label>
+                        <br>
+                        <input type = "checkbox" name = "atuacao"  id = "at"><label for="at">Análise de Testes</label>
+                        <br>
+                        <input type = "checkbox" name = "atuacao"  id = "an"><label for="an">Análise de Negócios</label>
+                        <br>
+                        <input type = "checkbox" name = "atuacao"   id = "m"><label for="m">Manutenção</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="formacao">Formação</label>
+                    </td>
+                    <td>
+                        <input list="form" name="formacao" id="formacao">
+                        <datalist id="form">
+                            <option value="Ensino Fundamental"></option>
+                            <option value="Ensino Médio"></option>
+                            <option value="Ensino Superior"></option>
+                            <option value="Especialização"></option>
+                            <option value="Mestrado"></option>
+                            <option value="Doutorado"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hist_prof">Breve histórico profissional</label>
+                    </td>
+                    <td>
+                        <textarea name="hist_prof" id="hist_prof" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cv">Upload do currículo vitae</label>
+                    </td>
+                    <td>
+                        <input type="file" name="cv" id="cv">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="wh">Disponibilidade de horas semanais</label>
+                    </td>
+                    <td>
+                        <input type="range" id="wh" list="whv" min="10" max="40" step="10">
+                        <datalist id="whv">
+                            <option value="10" label="10">1</option>
+                            <option value="20" label="20">2</option>
+                            <option value="30" label="30">3</option>
+                            <option value="40" label="40">4</option>
+                        </datalist>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Agendamento de entrevista</legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="interview_date">Data</label>
+                    </td>
+                    <td>
+                        <input type="date" name="interview_date" id="interview_date" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="interview_time">Horário</label>
+                    </td>
+                    <td>
+                        <input type="time" name="interview_time" id="interview_time" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>    </td>
+                    <td align="right">
+                        <input type="reset" value="Apagar tudo">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
